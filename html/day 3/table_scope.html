@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table scope</title>
+</head>
+<body>
+    <table border="5" cellspacing="5" cellpadding="5" bgcolor="pink">
+        <thead>
+            <tr>
+                <th colspan="6" scope="col">Student's record</th>
+    
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Father's name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Obtained marks</th>
+                <th scope="col">Date of admission</th>
+                <th scope="col">Total marks</th>
+            </tr>
+
+            <colgroup>
+                <col bgcolor="yellow">
+            </colgroup>
+
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td scope="row">Ram</td>
+                <td>Shyam</td>
+                <td>Naya Thimi</td>
+                <td>90</td>
+                <td>2019</td>
+                <td rowspan="2">100</td>
+            </tr>
+    
+            <tr>
+                <td scope="row">Geeta</td>
+                <td>Sita</td>
+                <td>Bhaktapur</td>
+                <td>98</td>
+                <td>2021</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+        <th scope="row">Total names</th>
+            <th>Total Father's name</th>
+            <th>Total address</th>
+            <th>Total obtained marks</th>
+            <th>Total admission year</th>
+            <th>Grand total</th>
+        </tfoot>       
+    </table>
+</body>
+</html>

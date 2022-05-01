@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table rowspan and colspan</title>
+</head>
+<body>
+    <table border="5" cellspacing="5" cellpadding="5">
+        <thead>
+            <tr>
+                <th colspan="6">Student's record</th>
+    
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Father's name</th>
+                <th>Address</th>
+                <th>Obtained marks</th>
+                <th>Date of admission</th>
+                <th>Total marks</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>Shyam</td>
+                <td>Naya Thimi</td>
+                <td>90</td>
+                <td>2019</td>
+                <td rowspan="2">100</td>
+            </tr>
+    
+            <tr>
+                <td>Geeta</td>
+                <td>Sita</td>
+                <td>Bhaktapur</td>
+                <td>98</td>
+                <td>2021</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+        <th>Total names</th>
+            <th>Total Father's name</th>
+            <th>Total address</th>
+            <th>Total obtained marks</th>
+            <th>Total admission year</th>
+            <th>Grand total</th>
+        </tfoot>       
+    </table>
+</body>
+</html>

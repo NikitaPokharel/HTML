@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form element2- label , autofoucs and read only</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label for="Name">Name:</label>
+            <input type="text" placeholder="Enter your name" title="Name" id="Name" name="Name" maxlength="5" autofocus required> <br> <br> <!--title is just for reading purpose, because of maxlenght we can only enter 5 characters in name field-->
+            
+            <label for="Email">Email:</label> <!--autofocus will automatically put the cursor in the position where autofocus is written-->
+            <input type="email" placeholder="Enter your email" title="Email" id="Email" name="Email" required><br> <br>
+            
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter your password" title="Password" id="Password" name="Password" required><br> <br>  <!--pattern: It means password only accepts number and atleast 5 numbers-->
+            
+            <input type="submit"><br> <br> <!--readonly only allows to view only not write into it. Disabled does'nt allow  anything to write.-->
+            <input type="reset"><br> <br>
+            <!--name="Name" is used for sending information to the programmer when the user fills up the form..-->
+            <!--id="Name" and label for="Name" should be same.It is used to put the cursor at each point when we click in Name, Email, Password.-->
+        </form>
+    </div>
+</body>
+</html>
